@@ -58,9 +58,8 @@ class GLOBAL_Model extends CI_Model{
 	function InitLingua()
 	{
 		$ci =& get_instance();
-		// Phần này ngôn ngữ luôn là 1
-		// $ci->linguaid = $this->linguaid();
-		$ci->linguaid = 1;
+		$ci->linguaid = $this->linguaid();
+
 	}
 	
 	function uploadimage($path="", $width=700, $height=850, $newname, $dimages="")
