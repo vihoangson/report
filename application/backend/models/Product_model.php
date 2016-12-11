@@ -7,6 +7,8 @@ class Product_model extends CI_Model{
 	private $_shop_module = "shop_module";
 	private $_shop_order = "shop_orders";
 	private $_shop_usercat = "shop_usercat";
+	private $_shop_language = "shop_language";
+
 	public $linguaid;
 	
     

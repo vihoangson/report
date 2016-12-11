@@ -27,7 +27,7 @@ class GLOBAL_Model extends CI_Model{
 	
     function linguaid(){
 		$site_lang = $this->getsitelang();
-		
+
         $this->db->select('*');
         $this->db->from($this->_lingua);
 		$this->db->where("lang",$site_lang);
@@ -58,7 +58,9 @@ class GLOBAL_Model extends CI_Model{
 	function InitLingua()
 	{
 		$ci =& get_instance();
-		$ci->linguaid = $this->linguaid();
+		// Phần này ngôn ngữ luôn là 1
+		// $ci->linguaid = $this->linguaid();
+		$ci->linguaid = 1;
 	}
 	
 	function uploadimage($path="", $width=700, $height=850, $newname, $dimages="")
