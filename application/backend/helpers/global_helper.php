@@ -20,8 +20,8 @@ function structure($data){
   
 function  draw_input($name,$values='',$width='100%',$height=380,$hidden=0)
 {
-		include_once(APPPATH."fckeditor/fckeditor.php") ;
-		require_once(APPPATH."ckfinder/ckfinder.php");
+		include_once(APPPATH."../../fckeditor/fckeditor.php") ;
+		require_once(APPPATH."../../ckfinder/ckfinder.php");
 		
 		//$oFCKeditor->BasePath = BASEPATH."/fckeditor/"  ;
 		$oFCKeditor = new FCKeditor($name) ;
